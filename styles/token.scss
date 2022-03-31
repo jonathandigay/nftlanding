@@ -1,0 +1,27 @@
+.tokens-main {
+  .tokens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
+    .token-card {
+      max-width: 300px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 20px;
+      .logo {
+        margin-bottom: 20px;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      p {
+        letter-spacing: 0.8px;
+        opacity: 0.8;
+      }
+    }
+  }
+}

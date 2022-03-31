@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+@import "./darkmode.scss";
+
+.main {
+  max-width: 2000px;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@import "./header.scss";
+@import "./hero.scss";
+@import "./banner.scss";
+@import "./carousel.scss";
+@import "./cards.scss";
+@import "./featuredone.scss";
+@import "./fearturedtwo.scss";
+@import "./token.scss";

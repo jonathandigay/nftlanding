@@ -1,0 +1,28 @@
+$dark: #001e3c;
+$black: rgb(0, 0, 0);
+$text: rgb(255, 255, 255);
+
+.darkmode {
+  background: $dark;
+  color: $text;
+
+  // carousel
+  .carousel-main {
+    .carousel-wrapper {
+      &::before {
+        background: linear-gradient(80deg, $dark, transparent);
+      }
+      &::after {
+        background: linear-gradient(80deg, transparent, $dark);
+      }
+    }
+  }
+
+  // card
+
+  .cards-main {
+    .card {
+      background: $black;
+    }
+  }
+}

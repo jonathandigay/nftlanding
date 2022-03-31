@@ -1,0 +1,86 @@
+.featuredone-main {
+  width: 80%;
+  margin: 0 auto 30px;
+
+  .featuredone {
+    background: rgba(255, 57, 152, 0.1);
+    position: relative;
+    padding: 20px 20px 0;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 60% auto;
+    align-items: center;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -10%;
+      bottom: -50%;
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(60deg, #ff3998, #ffa2cf);
+      z-index: -1;
+      border-radius: 50%;
+      filter: blur(100px);
+
+      @media screen and (max-width: 700px) {
+        right: unset;
+        bottom: unset;
+        right: -60%;
+        top: -20%;
+      }
+    }
+
+    .desc {
+      width: 100%;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+      p {
+        letter-spacing: 1px;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+      .link {
+        color: rgb(240, 0, 172);
+        margin-bottom: 20px;
+        cursor: pointer;
+        opacity: 0.9;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .nft {
+      width: 100%;
+      max-width: 250px;
+      bottom: 0;
+      height: auto;
+      right: 20%;
+      display: flex;
+    }
+
+    @media screen and (max-width: 700px) {
+      .desc {
+        grid-area: desc;
+
+        justify-content: unset;
+      }
+      .nft {
+        grid-area: nft;
+      }
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "nft"
+        "desc";
+    }
+  }
+}

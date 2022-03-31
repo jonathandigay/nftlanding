@@ -1,0 +1,80 @@
+.featuredtwo-main {
+  width: 80%;
+  margin: 0 auto 30px;
+  .featuredtwo {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40% auto;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -10%;
+      bottom: -50%;
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(60deg, #ffe139, #e70d0d);
+      z-index: -1;
+      border-radius: 50%;
+      filter: blur(100px);
+
+      @media screen and (max-width: 700px) {
+        right: unset;
+        bottom: unset;
+        left: -60%;
+        top: -20%;
+      }
+    }
+
+    .nft {
+      max-width: 250px;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+    .desc {
+      padding: 20px;
+
+      h1 {
+        margin-bottom: 20px;
+      }
+      p {
+        letter-spacing: 1px;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+      .link {
+        color: rgb(240, 0, 172);
+        margin-bottom: 20px;
+        cursor: pointer;
+        opacity: 0.9;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    @media screen and (max-width: 700px) {
+      .desc {
+        grid-area: desc;
+
+        justify-content: unset;
+      }
+      .nft {
+        grid-area: nft;
+        justify-content: center;
+      }
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "nft"
+        "desc";
+    }
+  }
+}
