@@ -6,6 +6,22 @@ $text: rgb(255, 255, 255);
   background: $dark;
   color: $text;
 
+  // header
+  .header-main {
+    background: $dark;
+    .header {
+      .navs-main {
+        .navs {
+          .nav-list {
+            @media screen and (max-width: 600px) {
+              background: $dark;
+            }
+          }
+        }
+      }
+    }
+  }
+
   // carousel
   .carousel-main {
     .carousel-wrapper {
@@ -22,7 +38,7 @@ $text: rgb(255, 255, 255);
 
   .cards-main {
     .card {
-      background: $black;
+      background: rgba(0, 0, 0, 0.3);
     }
   }
 }

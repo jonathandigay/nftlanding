@@ -7,6 +7,9 @@
 body {
   font-family: "Inter", sans-serif;
 }
+p {
+  margin: 0;
+}
 
 @import "./darkmode.scss";
 
@@ -27,3 +30,5 @@ img {
 @import "./featuredone.scss";
 @import "./fearturedtwo.scss";
 @import "./token.scss";
+@import "./bannerbottom.scss";
+@import "./footer.scss";

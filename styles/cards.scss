@@ -30,20 +30,24 @@
         .card {
           padding: 20px;
           margin-right: 20px;
-          .img {
-            width: 300px;
+          cursor: pointer;
+          &:hover {
+            background: rgba(255, 57, 152, 0.2);
+          }
+          > .img {
+            width: 250px;
             margin-bottom: 10px;
           }
           .desc {
             display: flex;
             justify-content: space-between;
             h1 {
-              font-size: 23px;
+              font-size: 18px;
               margin-bottom: 10px;
               font-weight: bold;
             }
             h2 {
-              font-size: 20px;
+              font-size: 16px;
               opacity: 0.7;
               font-weight: bold;
             }
@@ -60,7 +64,14 @@
               text-align: right;
               .price {
                 display: flex;
-                gap: 10px;
+                align-items: center;
+                justify-content: center;
+                .img {
+                  margin-right: 10px;
+                  width: 20px;
+                  height: 20px;
+                  height: auto;
+                }
               }
             }
           }

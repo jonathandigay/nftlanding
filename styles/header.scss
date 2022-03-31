@@ -1,4 +1,10 @@
 .header-main {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  background: white;
   .header {
     display: flex;
     align-items: center;
@@ -27,9 +33,19 @@
         .nav {
           display: inline-block;
           margin: 0 10px;
+          opacity: 0.7;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .mode {
+          position: relative;
+          opacity: 1;
         }
         .signup {
-          color: red;
+          color: rgb(255, 105, 105);
           cursor: pointer;
         }
         .mode {

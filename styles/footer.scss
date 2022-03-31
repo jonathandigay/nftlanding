@@ -1,0 +1,53 @@
+.footer-main {
+  padding: 10px;
+  .footer {
+    .rowone {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .colone {
+        padding: 10px;
+
+        .logo {
+          margin-bottom: 10px;
+          background: white;
+          padding: 10px 15px;
+          border-radius: 20px;
+        }
+        p {
+          margin-bottom: 10px;
+        }
+      }
+      .coltwo {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .col {
+          margin: 20px 20px;
+
+          h3 {
+            opacity: 0.8;
+            margin-bottom: 5px;
+          }
+
+          p {
+            opacity: 0.8;
+            cursor: pointer;
+            margin-bottom: 3px;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .rowtwo {
+      p {
+        opacity: 0.8;
+      }
+    }
+  }
+}
